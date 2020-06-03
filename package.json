@@ -1,0 +1,20 @@
+{
+  "name": "wormhole-shadow",
+  "version": "0.1.0",
+  "description": "(Almost) transparently connects different execution environments like wormholes",
+  "main": "lib/index.js",
+  "author": "Jeremy Lam \"JLChnToZ\"",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build-doc": "typedoc --excludeNotExported --excludePrivate --theme minimal --mode file --target es5 --readme none --out ./docs/ ./",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@types/node": "10",
+    "tslib": "^2.0.0"
+  }
+}
